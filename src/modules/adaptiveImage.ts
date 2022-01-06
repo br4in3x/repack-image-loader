@@ -8,6 +8,7 @@ class AdaptiveImage {
   }
 
   get uri() {
+    console.log('PixelRatio: ', PixelRatio.get(), 'data: ', JSON.stringify(this.data))
     if (PixelRatio.get() > 2 && this.data['uri@3x']) {
       return this.data['uri@3x']
     } else if (PixelRatio.get() > 1 && this.data['uri@2x']) {

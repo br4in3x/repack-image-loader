@@ -1,7 +1,7 @@
 {
-  "name": "react-native-web-image-loader",
+  "name": "repack-image-loader",
   "version": "0.1.1",
-  "description": "react-native-web-image-loader",
+  "description": "repack-image-loader",
   "main": "lib/index.js",
   "scripts": {
     "build": "rimraf lib/* && tsc -b",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peter-jozsa/react-native-web-image-loader.git"
+    "url": "git+https://github.com/br4in3x/repack-image-loader.git"
   },
   "keywords": [
     "webpack",
@@ -23,9 +23,9 @@
   "author": "Józsa Péter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peter-jozsa/react-native-web-image-loader/issues"
+    "url": "https://github.com/br4in3x/repack-image-loader/issues"
   },
-  "homepage": "https://github.com/peter-jozsa/react-native-web-image-loader#readme",
+  "homepage": "https://github.com/br4in3x/repack-image-loader#readme",
   "devDependencies": {
     "@types/node": "^13.13.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
@@ -39,6 +39,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "react-native": "0.64.1",
     "image-size": "^0.5.1",
     "loader-utils": "^2.0.0",
     "schema-utils": "^2.6.6"
