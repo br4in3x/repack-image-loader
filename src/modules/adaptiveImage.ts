@@ -1,3 +1,5 @@
+import { PixelRatio } from "react-native";
+
 class AdaptiveImage {
   protected data
 
@@ -6,15 +8,10 @@ class AdaptiveImage {
   }
 
   get uri() {
-    if (
-      typeof window !== 'undefined' &&
-      typeof window.devicePixelRatio !== 'undefined'
-    ) {
-      if (window.devicePixelRatio > 2 && this.data['uri@3x']) {
-        return this.data['uri@3x']
-      } else if (window.devicePixelRatio > 1 && this.data['uri@2x']) {
-        return this.data['uri@2x']
-      }
+    if (PixelRatio.get() > 2 && this.data['uri@3x']) {
+      return this.data['uri@3x']
+    } else if (PixelRatio.get() > 1 && this.data['uri@2x']) {
+      return this.data['uri@2x']
     }
 
     return this.data.uri
